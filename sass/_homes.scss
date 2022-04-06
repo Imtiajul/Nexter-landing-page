@@ -1,0 +1,130 @@
+%transition {
+   transition: all 300ms ease-in-out;
+}
+
+.homes {
+   // background-color: $color-grey-dark-2;
+   grid-column: center-start / center-end;
+   margin: 15rem 0;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   grid-gap: 5rem;
+
+}
+
+.home {
+   background-color: $color-grey-light-1;
+
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-row-gap: 3.5rem;
+
+   &__img {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+      z-index: 2;
+
+      overflow: hidden;
+
+      img {
+         width: 100%;
+         height: 100%;
+         @extend %transition;
+      }
+   }
+
+   &:hover>&__img>img {
+      transform: scale(1.2) rotate(2deg);
+      overflow: hidden;
+   }
+
+   &__like {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      fill: $color-primary;
+      width: 2rem;
+      height: 2rem;
+
+      z-index: 3;
+      justify-self: end;
+      margin: 1rem;
+   }
+
+   &__img+a {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      fill: $color-primary;
+
+      z-index: 10;
+      justify-self: end;
+   }
+
+   &__name {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+      z-index: 15;
+
+      width: 80%;
+      font-family: $font-display;
+      font-size: 1.2rem;
+      padding: 1.2rem 1.8rem;
+      text-align: center;
+      background-color: $color-secondary;
+      color: #fff;
+      justify-self: center;
+      align-self: end;
+      transform: translateY(50%);
+      @extend %transition;
+
+      @media only screen and (max-width: $bp-large) {
+         height: 18%;
+      }
+   }
+
+   &__location,
+   &__rooms {
+      margin-top: 2.5rem;
+   }
+
+   &__location,
+   &__rooms,
+   &__area,
+   &__price {
+      display: flex;
+      align-items: center;
+      margin-left: 3.5rem;
+      font-size: 1.5rem;
+
+      @extend %transition;
+
+      svg {
+         fill: $color-primary;
+         width: 2rem;
+         height: 2rem;
+         margin-right: 1rem;
+         @extend %transition;
+      }
+   }
+
+   &__btn {
+      grid-column: 1 / -1;
+   }
+
+   &:hover &__location svg,
+   &:hover &__rooms svg,
+   &:hover &__area svg,
+   &:hover &__price svg {
+      fill: $color-primary-dark;
+   }
+
+   &:hover &__location,
+   &:hover &__rooms,
+   &:hover &__area,
+   &:hover &__price {
+      font-weight: 600;
+   }
+
+   &:hover &__name {
+      font-size: 1.3rem;
+   }
+}

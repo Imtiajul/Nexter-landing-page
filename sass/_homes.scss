@@ -50,7 +50,7 @@
       margin: 1rem;
    }
 
-   &__img+a {
+   &__img + a {
       grid-column: 2 / 3;
       grid-row: 1 / 2;
       fill: $color-primary;

@@ -256,7 +256,7 @@ body {
 .story__img--1:hover, .story__img--2:hover {
   transform: scale(1.1) translateY(-0.5rem);
   z-index: 100;
-  outline: 0.3rem solid #c69963;
+  outline: 0.4rem solid #c69963;
   outline-offset: 1.2rem; }
 
 .story__picture {

@@ -215,6 +215,9 @@ body {
     width: 7rem;
     border-radius: .5rem;
     display: block; }
+  .realtors__new-feature {
+    display: none;
+    content: 'new feature added'; }
   .realtors__sold {
     text-transform: uppercase;
     color: #aaa;

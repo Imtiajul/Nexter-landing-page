@@ -42,7 +42,10 @@
       border-radius: .5rem;
       display: block;
    }
-
+&__new-feature {
+   display: none;
+   content: 'new feature added'
+}
    &__sold {
       text-transform: uppercase;
       color: $color-grey-light-2;

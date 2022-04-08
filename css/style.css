@@ -36,6 +36,12 @@ body {
   max-width: 100%;
   vertical-align: middle; }
 
+.feature, .home {
+  box-shadow: 0rem 0rem 1rem rgba(109, 93, 75, 0.25); }
+
+.feature:hover, .home:hover {
+  box-shadow: 0.1rem 0.3rem 1.3rem rgba(109, 93, 75, 0.4); }
+
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
@@ -239,10 +245,8 @@ body {
   height: 100%;
   border: 1px solid #66554114;
   padding: 2rem 1rem;
-  box-shadow: 0rem 0rem 1rem rgba(84, 72, 58, 0.25);
   transition: all 350ms ease-in-out; }
   .feature:hover {
-    box-shadow: 0.1rem 0.3rem 1.3rem rgba(84, 72, 58, 0.4);
     transform: translateY(-3px); }
   .feature__icon {
     fill: #c69963;
@@ -333,7 +337,8 @@ body {
   background-color: #f9f7f6;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 3.5rem; }
+  grid-row-gap: 3.5rem;
+  transition: all 350ms ease-in-out; }
   .home__img {
     grid-column: 1 / -1;
     grid-row: 1 / 2;

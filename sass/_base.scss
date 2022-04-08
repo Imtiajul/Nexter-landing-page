@@ -67,3 +67,12 @@ body {
    max-width: 100%;
    vertical-align: middle;
 }
+
+$transition: all 350ms ease-in-out;
+
+%box-shadow  {
+   box-shadow: 0rem 0rem 1rem rgba($color-grey-dark-2, .25);
+}
+%box-shadow-hover {
+   box-shadow: .1rem .3rem 1.3rem rgba($color-grey-dark-2, .4);
+}

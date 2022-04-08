@@ -18,10 +18,10 @@
    height: 100%;
    border: 1px solid #66554114;
    padding: 2rem 1rem;
-   box-shadow: 0rem 0rem 1rem rgba($color-grey-dark-1, .25);
-   transition: all 350ms ease-in-out;
+   @extend %box-shadow;
+   transition: $transition;
    &:hover {
-      box-shadow: .1rem .3rem 1.3rem rgba($color-grey-dark-1, .4);
+   @extend %box-shadow-hover;
       transform: translateY(-3px);
    }
 

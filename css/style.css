@@ -209,8 +209,11 @@ body {
     padding: 1rem;
     border-radius: 3px;
     box-shadow: 0 0 1rem #c69963; }
+    .realtors__list img {
+    transition: .15s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
     .realtors__list:hover img {
-      transform: scale(1.1) rotate(-5deg); }
+      transform: scale(1.13) rotate(-5deg); }
     @media only screen and (max-width: 50em) {
       .realtors__list {
         grid-template-columns: repeat(3, min-content max-content); } }
